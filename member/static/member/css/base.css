@@ -1,0 +1,133 @@
+/* Базовые настройки */
+@font-face {
+  font-family: Miroslav;
+  src: url('../fonts/Miroslav-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  /* прижимает футер к низу экрана */
+  display: flex;
+  min-height: 100vh;
+  min-width: 400px;
+  flex-direction: column;
+  /*-------------------------------*/
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.logo-img {
+  max-width: 15%;
+  border-radius: 5px 25px ;
+  border: 2px solid gray;
+}
+
+h1, h2 {
+  font-family: Miroslav, Arial, Helvetica, sans-serif;
+  padding-top: 1.1rem;
+  color: gray;
+  text-shadow: 2px 2px 1px gold;
+  letter-spacing: 0.05rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  padding-top: 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-family: Miroslav, Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-shadow: -1px -1px 1px white, 2px 2px 1px gold;
+  font-weight: bold;
+  color: brown;
+}
+
+nav {
+  margin-top: 2rem;
+  margin-bottom: -15px;
+}
+
+.font-nav {
+  font-size: 0.8rem;
+}
+
+main {
+  /* прижимает футер к низу экрана */
+  flex-grow: 1;
+  /*-------------------------------*/
+
+  background-image: linear-gradient(to top, rgb(91, 82, 82), rgb(149, 153, 137));
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+footer {
+  display: flex;
+  background-color: #333;
+  color: #fafafa;
+  padding: 1rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+footer span {
+  margin: 0 auto;
+}
+
+/* Ссылка на Телеграмм */
+.telegram-link {
+  display: inline-block;
+}
+
+.telegram-link i {
+  margin-right: 50px;
+}
+
+.telegram-icon {
+  font-size: 32px;
+  color: #0088CC; /* Цвет иконки */
+  transition: transform 0.3s ease-in-out; /* Время анимации и кривая ускорения */
+}
+
+.telegram-icon:hover {
+  transform: scale(1.2); /* Увеличение иконки на 20% */
+}
+/*-----------------------------------------------------------------*/
+
+@media screen and (min-width: 980px) {
+  .header {
+    display: flex;
+    justify-content:space-around; /* Элементы распределяются равномерно */
+    align-items: center; /* Центрируем вертикальное выравнивание */
+  }
+
+  .logo-img {
+    max-width: 10%;
+  }
+
+  margin-top: 50px;
+
+  h1 {
+    font-size: 5.5em;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
